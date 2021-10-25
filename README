@@ -1,0 +1,14 @@
+Necula Bianca 315CA
+
+Tema 3 - Archiver
+
+Cand programul este executat, utilizatorul are optiunile de create, list si extract. In caz ca comanda este gresita sau are un numar mai mic sau mai mare de parametrii, se va afisa pe ecran "Wrong command!", in caz contrar "Done!".
+
+Create: creaaza o arhiva tip tar in care arhiveaza toate fisierele din folderul dat ca parametru
+
+	--write_meta: scrie metadatele corspunzatoare fiecarui fisier dat prin headerul din uniunea record
+	--write_data: scrie caracter cu caracter informatiile din fisiere si umple spatiul ramas pana la un multiplu al lui 512 cu '/0'
+	--calculate_checksum: calculeaza checksum intre bytes-ii din header
+	--calculate_time: calculeaza cu functia mktime() timestampul fisierelor
+List: listeaza fisierele arhivate in arhiva creata cu "create"
+Extract: extrage fisierul dat ca parametru si il rescrie in noul fisier 
